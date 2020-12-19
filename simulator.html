@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Relativity</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="settings">
+            <label id="speed-label" for="speed">speed: 0.45c</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="speed">
+            <button onclick="resetTime()">reset time</button>
+            <button onclick="window.location.href='index.html'">exit</button>
+        </div>
+        <canvas width="800" height="800"></canvas>
+    </body>
+
+    <link rel="stylesheet" type="text/css" href="css/simulator.css">
+
+    <script type="text/javascript" src="js/simulator.js"></script>
+</html>
+

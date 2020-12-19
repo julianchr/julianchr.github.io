@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Relativity</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px; background-color:#2c3e50!important">
+        <h1 class="w3-margin w3-jumbo">RELATIVITY SIMULATOR</h1>
+        <p class="w3-xlarge">an intuitive way to experience high speeds</p>
+        <button onclick="window.location.href='simulator.html'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">try it now</button>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+            <h1>Birth of Relativity</h1>
+            <h5 class="w3-padding-32">What happens when something, or someone, travels near the speed of light? This is a simple question with profound consequences. And ultimately, the answer requires a new understanding of space and time altogether.</h5>
+
+            <p class="w3-text-grey">Einstein is the man responsible for this world-changing revelation. He ultimately came to the 
+                key realization that the speed of light is an unbreakable barrier. This may not seem overly exciting, however, the
+                implications that come with this statement are huge. As explained by Brian Greene in his book <i>The Elegant Universe</i>,
+                it helps to think of us traveling not through space, but through space-time. Everybody and everything in this universe travels
+                through space-time at the same speed, the speed of light. And thus, when something travels close to the speed of light, the
+                amount they travel through time is reduced. This applies at all speeds of travel. However, at our day-to-day speeds, we do
+                not notice the major effects of this result. This is what the simulator will try to help with.
+            </p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="images/lightbulb.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <img class="left" src="images/clock.png">
+            </div>
+
+            <div class="w3-twothird">
+            <h1>Time Dilation</h1>
+            <h5 class="w3-padding-32">Is time travel possible? Relatively possible at the very least.</h5>
+
+            <p class="w3-text-grey">One of the primary effects of the constancy of the speed of light is the effect of time dilation.
+                Explained simply, time dilation states that an observer at rest will observe a moving object as moving through time more
+                slowly than other objects at rest. This may seem counter-intuitive, however, a simple thought experiment should alleviate
+                most concern:<br> 
+                <br> Imagine two simple, equal clocks, with mirrors that bounce a particle of light from one end to the other (up and down).
+                Every time it reaches one end, the counter goes up, thus creating a form of clock. If the speed of the particle at
+                rest is the same (the speed of light), we should expect that at rest both clocks record the same time. However, imagine
+                one of the clocks now moves (side to side). In order to bounce off the mirrors, the light must travel both up and down, but also
+                now side to side. This is obviously a longer distance to travel, and if the particle takes the same amount of time
+                to travel, it will clearly record a slower time.<br>
+                <br>
+                More precisely, this change in recorded time is of the Lorentz factor &gamma; (<sup>1</sup> / <sub>sqrt(1 - (v<sup>2</sup> / c<sup>2</sup>))</sub>).
+                An observer at rest will view a moving clock as moving with a rate of t / &gamma; (with respect to their own version of t).
+                <br>
+                <br>
+                However, this effect is not merely limited to bouncing photons. It applies to every form of time measurement. Thus, if one were
+                to travel to a far away place and back at close to the speed of light, the passengers would have biologically aged less than the
+                people who remained on earth. One might imagine, if the effect is relative, and both objects can claim to be at movement, would
+                this effect not carry over to both perspectives (i.e. both the passengers and the observers on earth can claim to be older)? 
+                However, the person that travels must accelerate and decelerate, and thus they cannot record time in the same manner. Thus, the
+                person who travels objectively ages less than the people on earth from all perspectives.<br>
+                <br>
+                This effect might sound a bit magical at first glance, and potentially untestable. However, we have very real experience with
+                this phenomenon. The GPS system is one example of this. The GPS system positions its users through the use of satellites. These
+                satellites must all be sychronized both with each other and with the ground to have accurate readings. However, in order to
+                achieve accurate readings, the equations of relativity (and thus time dilation) had to be taken into account due to its velocity
+                traveling in orbit.
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Third Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+            <h1>Length Contraction</h1>
+            <h5 class="w3-padding-32">If the experience of time changes, might the experience of space as well?</h5>
+
+            <p class="w3-text-grey">
+                This question can be answered with a very similar thought experiment as was used to understand time dilation. If the moving clock is 
+                suddenly traveling alongside an object of fixed length, one way to record the length of the object would be to record the amount of time
+                it took for the clock to pass the object, and use that as a form of measurement. If the object is fixed, it will see the moving object 
+                pass at one time, and leave at another. This is the objective length of the rod. However, as we have seen, with time dilation, the
+                clock at movement will record a shorter time, and thus would perceive the object as shorter by a factor of &gamma;. This is, of course,
+                only in the direction of travel. In other directions, perspective of space would be unchanged.
+            </p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img class="tape" src="images/tape.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <img class="left" src="images/books.png" style="margin-top:60px">
+            </div>
+
+            <div class="w3-twothird">
+            <h1>Simulator Tutorial</h1>
+            <h5 class="w3-padding-32">Some of the concepts in this simulator require some explanation.</h5>
+
+            <p class="w3-text-grey">For one, how the simulator handles movement through space. In this simulation, you control the speed and
+                direction of movement of a rocket. Your rocket begins on Earth. To accelerate, bring your mouse into the simulation box and
+                hold click for as long as you would like the ship to move. When you accelerate, you will see space shift, as one would if
+                one were inside the rocket. Namely, length contraction occurs for the observer in the direction of travel.<br>
+                <br>
+                Now, for the time dilation in the simulation. I have chosen the two planets to be the perspective of the observers. This is
+                due to the fact that the planets are the only observers not accelerating and decelerating, and thus these equations for relative
+                time still hold. The planets in this simulation are relatively still to one another.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>all images and assets used available for use under Creative Commons license</p>
+    </footer>
+
+</body>
+</html>
+

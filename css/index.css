@@ -1,0 +1,16 @@
+img {
+    margin-top: 50px;
+    padding-left: 100px;
+    width: 350px;
+}
+
+img.tape {
+    width: 420px;
+}
+
+
+img.left {
+    padding-right: 100px;
+    padding-left: 0px;
+    margin-top: 150px;
+}
